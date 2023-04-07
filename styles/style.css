@@ -143,7 +143,7 @@ img {
 
 .nav__logo {
 	display: flex;
-	width: 1.5rem;
+	width: 6rem;
 }
 
 .nav__toggle {
@@ -668,9 +668,6 @@ img {
 	.home__data {
 		padding-top: 8rem;
 	}
-	.specs__img {
-		width: 300px;
-	}
 	.case__container {
 		column-gap: 5rem;
 	}
@@ -703,7 +700,8 @@ img {
 		padding: 0.85rem;
 	}
 	.products__img {
-		width: 95px;
+		width: 200px;
+		top: 1%;
 	}
 	.footer__container {
 		grid-template-columns: 0.4fr 0.7fr 0.7fr 1fr;
@@ -727,7 +725,7 @@ img {
 	.specs__img {
 		width: 500px;
 		position: absolute;
-		left: 20rem;
+		left: 12rem;
 	}
 
 	.specs__data:nth-child(1),
