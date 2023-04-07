@@ -433,10 +433,6 @@ img {
 	row-gap: 2rem;
 }
 
-.footer__logo {
-	width: 2rem;
-}
-
 .footer__title {
 	font-size: var(--h3-font-size);
 	font-weight: var(--font-medium);
@@ -647,7 +643,7 @@ img {
 		height: calc(var(--header-height) + 1.5rem);
 	}
 	.nav__logo {
-		width: 2rem;
+		width: 6rem;
 	}
 	.nav__list {
 		flex-direction: row;
@@ -721,32 +717,32 @@ img {
 		margin-right: auto;
 	}
 	.home__img {
-		width: 250px;
-		top: -15rem;
+		width: 200px;
+		top: -2rem;
 	}
 	.home__title {
 		top: -5rem;
 		left: 3.5rem;
 	}
-  .specs__img {
-    width: 500px;
-    position: absolute;
-    left: 20rem;
-  }
+	.specs__img {
+		width: 500px;
+		position: absolute;
+		left: 20rem;
+	}
 
-  .specs__data:nth-child(1),
-  .specs__data:nth-child(4) {
-	margin-left: 1.5rem;
-}
+	.specs__data:nth-child(1),
+	.specs__data:nth-child(4) {
+		margin-left: 1.5rem;
+	}
 
-.specs__title {
-	font-size: 20px;
-	font-weight: var(--font-medium);
-}
+	.specs__title {
+		font-size: 20px;
+		font-weight: var(--font-medium);
+	}
 
-.specs__subtitle {
-	font-size: 20px
-}
+	.specs__subtitle {
+		font-size: 20px;
+	}
 
 	.home__description {
 		padding-right: 5rem;
