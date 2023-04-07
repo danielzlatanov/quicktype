@@ -721,13 +721,33 @@ img {
 		margin-right: auto;
 	}
 	.home__img {
-		width: 300px;
+		width: 250px;
 		top: -15rem;
 	}
 	.home__title {
 		top: -5rem;
 		left: 3.5rem;
 	}
+  .specs__img {
+    width: 500px;
+    position: absolute;
+    left: 20rem;
+  }
+
+  .specs__data:nth-child(1),
+  .specs__data:nth-child(4) {
+	margin-left: 1.5rem;
+}
+
+.specs__title {
+	font-size: 20px;
+	font-weight: var(--font-medium);
+}
+
+.specs__subtitle {
+	font-size: 20px
+}
+
 	.home__description {
 		padding-right: 5rem;
 	}
