@@ -379,6 +379,7 @@ img {
 	position: absolute;
 	top: 4rem;
 	right: -11rem;
+	border-radius: 15px;
 }
 
 .products__line {
@@ -651,6 +652,7 @@ img {
 	}
 	.discount__img {
 		position: initial;
+		border-radius: 15px;
 	}
 	.discount__container {
 		grid-template-columns: repeat(2, 1fr);
@@ -790,6 +792,7 @@ img {
 	}
 	.discount__img {
 		width: 350px;
+		border-radius: 15px;
 	}
 	.footer__container {
 		padding-top: 3rem;
