@@ -589,6 +589,9 @@ img {
 		grid-template-columns: 142px;
 		justify-content: center;
 	}
+	.products__img {
+		top: 1rem;
+	}
 }
 /* For semi-medium devices */
 @media screen and (max-width: 574px) and (min-width: 341px){
@@ -601,6 +604,9 @@ img {
 	.nav__logo {
 		width: 10rem;
 		padding-top: 2rem
+	}
+	.products__img {
+		top: 1rem;
 	}
 }
 
@@ -654,6 +660,9 @@ img {
 	.products__container {
 		grid-template-columns: repeat(3, 142px);
 		justify-content: center;
+	}
+	.products__img {
+		top: 1rem;
 	}
 }
 
