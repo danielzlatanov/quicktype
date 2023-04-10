@@ -799,7 +799,7 @@ img {
 		width: 100vh;
 		height: 50vh;
 		border-radius: 20px;
-		padding-top: 70px;
+		padding-top: 100px;
 	}
 	.background {
 		background: rgba(111, 110, 110, 0.182);
@@ -813,12 +813,12 @@ img {
 	#nav-menu-cart h1 {
 		position: absolute;
 		top: 2rem;
-		left: 19rem;
+		left: 22rem;
 	}
 	.cart__final {
 		position: absolute;
-		top: 15rem;
-		right: 14rem;
+		padding-top: 50px;
+		right: 17rem;
 	}
 	/*! apply to center any object */
 	.center {
