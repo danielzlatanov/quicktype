@@ -1,88 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/styles/style.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
+			rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Open+Sans&family=Poppins:wght@300&display=swap"
+			rel="stylesheet" />
+		<link rel="shortcut icon" href="images/hp1.png" type="image/x-icon" />
+		<title>QuickType</title>
+	</head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="/styles/style.css" />
-	<link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet" />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Open+Sans&family=Poppins:wght@300&display=swap"
-		rel="stylesheet" />
-	<link rel="shortcut icon" href="images/hp1.png" type="image/x-icon" />
-	<title>QuickType</title>
-</head>
+	<body>
+		<header class="header" id="header">
+			<nav class="nav container">
+				<a href="#" class="nav__logo">
+					<img src="images/logos/main-logo.png" alt="" />
+				</a>
 
-<body>
-	<header class="header" id="header">
-		<nav class="nav container">
-			<a href="#" class="nav__logo">
-				<img src="images/logos/main-logo.png" alt="" />
-			</a>
-
-			<div class="nav__menu" id="nav-menu">
-				<ul class="nav__list">
-					<li class="nav__item">
-						<a href="#home" class="active-link nav__link">Start</a>
-					</li>
-					<li class="nav__item">
-						<a href="#specs" class="nav__link">Product</a>
-					</li>
-					<li class="nav__item">
-						<a href="#case" class="nav__link">Switches</a>
-					</li>
-					<li class="nav__item">
-						<a href="#products" class="nav__link">Styles</a>
-					</li>
-					<li class="nav__item">
-						<i class="ri-shopping-bag-line button__icon" id="cartBtn"></i>
-					</li>
-				</ul>
-				<div class="nav__close" id="nav-close">
-					<i class="ri-close-line"></i>
+				<div class="nav__menu" id="nav-menu">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="#home" class="active-link nav__link">Start</a>
+						</li>
+						<li class="nav__item">
+							<a href="#specs" class="nav__link">Product</a>
+						</li>
+						<li class="nav__item">
+							<a href="#case" class="nav__link">Switches</a>
+						</li>
+						<li class="nav__item">
+							<a href="#products" class="nav__link">Styles</a>
+						</li>
+						<li class="nav__item">
+							<i class="ri-shopping-bag-line button__icon" id="cartBtn"></i>
+						</li>
+					</ul>
+					<div class="nav__close" id="nav-close">
+						<i class="ri-close-line"></i>
+					</div>
 				</div>
-			</div>
 
+				<div class="nav__toggle" id="nav-toggle">
+					<i class="ri-shopping-bag-line button__icon" id="cartBtnMobile"></i>
+					<i class="ri-function-line"></i>
+				</div>
+			</nav>
 			<div class="nav__menu hide" id="nav-menu-cart">
 				<h1>Your Cart</h1>
 				<ul class="cart__list">
 					<li class="cart__item">
 						<div class="card">
-							<img src="images/hkIMG/hk1.png" alt="" class="card-img">
-							<hr>
+							<img src="images/hkIMG/hk1.png" alt="" class="card-img" />
+							<hr />
 							<div class="cart-item">Dark Blue</div>
-							<hr>
+							<hr />
 							<div class="cart-quantity">Quantity: 1</div>
-							<hr>
+							<hr />
 							<div class="cart-price">Price: $275</div>
-							<hr>
+							<hr />
 							<button class="cart-btn">Remove</button>
 						</div>
 					</li>
 					<li class="cart__item">
 						<div class="card">
-							<img src="images/hkIMG/hk2-1.png" alt="" class="card-img">
-							<hr>
+							<img src="images/hkIMG/hk2-1.png" alt="" class="card-img" />
+							<hr />
 							<div class="cart-item">Dirty White</div>
-							<hr>
+							<hr />
 							<div class="cart-quantity">Quantity: 2</div>
-							<hr>
+							<hr />
 							<div class="cart-price">Price: $339</div>
-							<hr>
+							<hr />
 							<button class="cart-btn">Remove</button>
 						</div>
 					</li>
 					<li class="cart__item">
 						<div class="card">
-							<img src="images/hkIMG/hk3-k.png" alt="" class="card-img">
-							<hr>
+							<img src="images/hkIMG/hk3-k.png" alt="" class="card-img" />
+							<hr />
 							<div class="cart-item">Bright White</div>
-							<hr>
+							<hr />
 							<div class="cart-quantity">Quantity: 1</div>
-							<hr>
+							<hr />
 							<div class="cart-price">Price: $240</div>
-							<hr>
+							<hr />
 							<button class="cart-btn">Remove</button>
 						</div>
 					</li>
@@ -91,262 +97,264 @@
 					<div class="cart__total">Total: $1193.00</div>
 					<button class="cart-continue">Continue</button>
 				</div>
-					<div class="nav__close__cart" id="nav-close-cart">
+				<div class="nav__close__cart" id="nav-close-cart">
 					<i class="ri-close-line"></i>
 				</div>
 			</div>
+		</header>
 
-			<div class="nav__toggle" id="nav-toggle">
-				<i class="ri-shopping-bag-line button__icon" id="cartBtnMobile"></i>
-				<i class="ri-function-line"></i>
-			</div>
-		</nav>
-	</header>
-
-	<main class="main">
-		<section class="home section" id="home">
-			<div class="home__container container grid">
-				<div>
-					<img src="/images/mainIMG/keyCheck.png" alt="" class="home__img" />
-				</div>
-
-				<div class="home__data">
-					<div class="home__header">
-						<h1 class="home__title">Your</h1>
-						<h2 class="home__subtitle">QuickType</h2>
-					</div>
-
-					<div class="home__footer">
-						<h3 class="home__title-description">Overview</h3>
-						<p class="home__description">
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-							Repellendus, ex.
-						</p>
-						<a href="#" class="button button--flex">
-							<span class="button--flex"><i class="ri-shopping-bag-line button__icon"></i> Add to
-								Bag</span>
-							<span class="home__price">$299</span>
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="sponsor section">
-			<div class="sponsor__container container grid">
-				<img src="/images/logos/logi-transformed.png" altaltpng" alt="sponsor1" class="sponsor__img" /> <img
-					src="/images/logos/das-transformed.png" altaltpng" alt="sponsor4" class="sponsor__img" /> <img
-					src="/images/logos/meko-transformed.png" altaltpng" alt="sponsor2" class="sponsor__img" /> <img
-					src="/images/logos/typone.png" altaltpng" alt="sponsor3" class="sponsor__img" />
-			</div>
-		</section>
-
-		<section class="specs section grid" id="specs">
-			<h2 class="section__title section__title-gradient">Specs</h2>
-			<div class="specs__container container grid">
-				<div class="specs__content grid">
-					<div class="specs__data">
-						<i class="ri-bluetooth-line specs__icon"></i>
-						<h3 class="specs__title">Connection</h3>
-						<span class="specs__subtitle">Bluetooth v6.6</span>
-					</div>
-
-					<div class="specs__data">
-						<i class="ri-battery-charge-fill specs__icon"></i>
-						<h3 class="specs__title">Battery</h3>
-						<span class="specs__subtitle">420h Duration</span>
-					</div>
-
-					<div class="specs__data">
-						<i class="ri-plug-fill specs__icon"></i>
-						<h3 class="specs__title">Charge</h3>
-						<span class="specs__subtitle">Fast Charge 88W</span>
-					</div>
-
-					<div class="specs__data">
-						<i class="ri-keyboard-box-fill specs__icon"></i>
-						<h3 class="specs__title">Keys</h3>
-						<span class="specs__subtitle">Great typing experience</span>
-					</div>
-
+		<main class="main">
+			<section class="home section" id="home">
+				<div class="home__container container grid">
 					<div>
-						<img src="/images/mainIMG/specs.png" alt="" class="specs__img" />
+						<img src="/images/mainIMG/keyCheck.png" alt="" class="home__img" />
+					</div>
+
+					<div class="home__data">
+						<div class="home__header">
+							<h1 class="home__title">Your</h1>
+							<h2 class="home__subtitle">QuickType</h2>
+						</div>
+
+						<div class="home__footer">
+							<h3 class="home__title-description">Overview</h3>
+							<p class="home__description">
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+								Repellendus, ex.
+							</p>
+							<a href="#" class="button button--flex">
+								<span class="button--flex"
+									><i class="ri-shopping-bag-line button__icon"></i> Add to
+									Bag</span
+								>
+								<span class="home__price">$299</span>
+							</a>
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<section class="case section grid" id="case">
-			<h2 class="section__title section__title-gradient">Switches</h2>
-			<div class="case__container container grid">
-				<div>
-					<img src="/images/mainIMG/switches.gif" alt="" class="case__img" />
+			<section class="sponsor section">
+				<div class="sponsor__container container grid">
+					<img src="/images/logos/logi-transformed.png" altaltpng" alt="sponsor1"
+					class="sponsor__img" /> <img src="/images/logos/das-transformed.png" altaltpng"
+					alt="sponsor4" class="sponsor__img" /> <img
+					src="/images/logos/meko-transformed.png" altaltpng" alt="sponsor2"
+					class="sponsor__img" /> <img src="/images/logos/typone.png" altaltpng"
+					alt="sponsor3" class="sponsor__img" />
+				</div>
+			</section>
+
+			<section class="specs section grid" id="specs">
+				<h2 class="section__title section__title-gradient">Specs</h2>
+				<div class="specs__container container grid">
+					<div class="specs__content grid">
+						<div class="specs__data">
+							<i class="ri-bluetooth-line specs__icon"></i>
+							<h3 class="specs__title">Connection</h3>
+							<span class="specs__subtitle">Bluetooth v6.6</span>
+						</div>
+
+						<div class="specs__data">
+							<i class="ri-battery-charge-fill specs__icon"></i>
+							<h3 class="specs__title">Battery</h3>
+							<span class="specs__subtitle">420h Duration</span>
+						</div>
+
+						<div class="specs__data">
+							<i class="ri-plug-fill specs__icon"></i>
+							<h3 class="specs__title">Charge</h3>
+							<span class="specs__subtitle">Fast Charge 88W</span>
+						</div>
+
+						<div class="specs__data">
+							<i class="ri-keyboard-box-fill specs__icon"></i>
+							<h3 class="specs__title">Keys</h3>
+							<span class="specs__subtitle">Great typing experience</span>
+						</div>
+
+						<div>
+							<img src="/images/mainIMG/specs.png" alt="" class="specs__img" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="case section grid" id="case">
+				<h2 class="section__title section__title-gradient">Switches</h2>
+				<div class="case__container container grid">
+					<div>
+						<img src="/images/mainIMG/switches.gif" alt="" class="case__img" />
+					</div>
+
+					<div class="case__data">
+						<p class="case__description">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, itaque.
+						</p>
+						<div id="details-btn">
+							<a href="#" class="button button--flex">
+								<i class="ri-information-fill button__icon"></i> Info
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="discount section">
+				<div class="discount__container container grid">
+					<div class="discount__animate">
+						<h2 class="discount__title">
+							Lorem ipsum dolor <br />
+							lorem ipsum
+						</h2>
+						<p class="discount__description">Get our new keyboard. Now, 50% off.</p>
+						<a href="#" class="button button--flex">
+							<i class="ri-shopping-bag-line button__icon"></i> Buy Now
+						</a>
+					</div>
+					<video
+						src="images/hkIMG/keyVideo.mp4"
+						alt="keyboard1"
+						class="discount__img"
+						muted
+						loop
+						autoplay></video>
+				</div>
+			</section>
+
+			<section class="products section" id="products">
+				<h2 class="section__title section__title-gradient products__line">
+					Choose <br />
+					Your Style
+				</h2>
+
+				<div class="products__container container grid">
+					<article class="products__card">
+						<div class="products__content">
+							<img src="/images/hkIMG/hk2-1.png" alt="" class="products__img" />
+							<h3 class="products__title">Dirty White</h3>
+							<span class="products__price">$339</span>
+
+							<button class="button button--flex products__button">
+								<i class="ri-shopping-bag-line button__icon"></i>
+							</button>
+						</div>
+					</article>
+
+					<article class="products__card">
+						<div class="products__content">
+							<img src="/images/hkIMG/hk3-k.png" alt="" class="products__img" />
+							<h3 class="products__title">Bright White</h3>
+							<span class="products__price">$240</span>
+
+							<button class="button button--flex products__button">
+								<i class="ri-shopping-bag-line button__icon"></i>
+							</button>
+						</div>
+					</article>
+					<article class="products__card">
+						<div class="products__content">
+							<img src="/images/hkIMG/hk1.png" alt="" class="products__img" />
+							<h3 class="products__title">Dark Blue</h3>
+							<span class="products__price">$275</span>
+
+							<button class="button button--flex products__button">
+								<i class="ri-shopping-bag-line button__icon"></i>
+							</button>
+						</div>
+					</article>
+					<article class="products__card">
+						<div class="products__content">
+							<img src="/images/hkIMG/h4-k.png" alt="" class="products__img" />
+							<h3 class="products__title">Simple White</h3>
+							<span class="products__price">$220</span>
+
+							<button class="button button--flex products__button">
+								<i class="ri-shopping-bag-line button__icon"></i>
+							</button>
+						</div>
+					</article>
+					<article class="products__card">
+						<div class="products__content">
+							<img src="/images/hkIMG/hk5-k.png" alt="" class="products__img" />
+							<h3 class="products__title">Boring Gray</h3>
+							<span class="products__price">$235</span>
+
+							<button class="button button--flex products__button">
+								<i class="ri-shopping-bag-line button__icon"></i>
+							</button>
+						</div>
+					</article>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer section">
+			<div class="footer__container container grid">
+				<div class="footer__content">
+					<h3 class="footer__title">Products</h3>
+
+					<ul class="footer__links">
+						<li>
+							<a href="#" class="footer__link">Keyboards</a>
+						</li>
+						<li>
+							<a href="#" class="footer__link">Cases</a>
+						</li>
+						<li>
+							<a href="#" class="footer__link">Accessories</a>
+						</li>
+					</ul>
 				</div>
 
-				<div class="case__data">
-					<p class="case__description">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, itaque.
-					</p>
-					<div id="details-btn">
-						<a href="#" class="button button--flex">
-							<i class="ri-information-fill button__icon"></i> Info
+				<div class="footer__content">
+					<h3 class="footer__title">Support</h3>
+
+					<ul class="footer__links">
+						<li>
+							<a href="#" class="footer__link">Service</a>
+						</li>
+						<li>
+							<a href="#" class="footer__link">Updates</a>
+						</li>
+						<li>
+							<a href="#" class="footer__link">Sponsors</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__content">
+					<form action="" class="footer__form">
+						<input type="email" placeholder="Email" class="footer__input" />
+						<button class="button button--flex">
+							<i class="ri-send-plane-line button__icon"></i>Subscribe
+						</button>
+					</form>
+
+					<div class="footer__social">
+						<a href="#" target="_blank" class="footer__social-link">
+							<i class="ri-facebook-line"></i>
+						</a>
+						<a href="#" target="_blank" class="footer__social-link">
+							<i class="ri-instagram-line"></i>
+						</a>
+						<a href="#" target="_blank" class="footer__social-link">
+							<i class="ri-linkedin-line"></i>
 						</a>
 					</div>
 				</div>
 			</div>
-		</section>
+			<p class="footer__copy">
+				<a href="#" target="_blank" class="footer__copy-link">
+					&#169; All rights reserved.
+				</a>
+			</p>
+		</footer>
 
-		<section class="discount section">
-			<div class="discount__container container grid">
-				<div class="discount__animate">
-					<h2 class="discount__title">
-						Lorem ipsum dolor <br />
-						lorem ipsum
-					</h2>
-					<p class="discount__description">Get our new keyboard. Now, 50% off.</p>
-					<a href="#" class="button button--flex">
-						<i class="ri-shopping-bag-line button__icon"></i> Buy Now
-					</a>
-				</div>
-				<video src="images/hkIMG/keyVideo.mp4" alt="keyboard1" class="discount__img" muted loop
-					autoplay></video>
-			</div>
-		</section>
+		<a href="#" class="scrollup" id="scroll-up">
+			<i class="ri-arrow-drop-up-line scrollup__icon"></i>
+		</a>
 
-		<section class="products section" id="products">
-			<h2 class="section__title section__title-gradient products__line">
-				Choose <br />
-				Your Style
-			</h2>
-
-			<div class="products__container container grid">
-				<article class="products__card">
-					<div class="products__content">
-						<img src="/images/hkIMG/hk2-1.png" alt="" class="products__img" />
-						<h3 class="products__title">Dirty White</h3>
-						<span class="products__price">$339</span>
-
-						<button class="button button--flex products__button">
-							<i class="ri-shopping-bag-line button__icon"></i>
-						</button>
-					</div>
-				</article>
-
-				<article class="products__card">
-					<div class="products__content">
-						<img src="/images/hkIMG/hk3-k.png" alt="" class="products__img" />
-						<h3 class="products__title">Bright White</h3>
-						<span class="products__price">$240</span>
-
-						<button class="button button--flex products__button">
-							<i class="ri-shopping-bag-line button__icon"></i>
-						</button>
-					</div>
-				</article>
-				<article class="products__card">
-					<div class="products__content">
-						<img src="/images/hkIMG/hk1.png" alt="" class="products__img" />
-						<h3 class="products__title">Dark Blue</h3>
-						<span class="products__price">$275</span>
-
-						<button class="button button--flex products__button">
-							<i class="ri-shopping-bag-line button__icon"></i>
-						</button>
-					</div>
-				</article>
-				<article class="products__card">
-					<div class="products__content">
-						<img src="/images/hkIMG/h4-k.png" alt="" class="products__img" />
-						<h3 class="products__title">Simple White</h3>
-						<span class="products__price">$220</span>
-
-						<button class="button button--flex products__button">
-							<i class="ri-shopping-bag-line button__icon"></i>
-						</button>
-					</div>
-				</article>
-				<article class="products__card">
-					<div class="products__content">
-						<img src="/images/hkIMG/hk5-k.png" alt="" class="products__img" />
-						<h3 class="products__title">Boring Gray</h3>
-						<span class="products__price">$235</span>
-
-						<button class="button button--flex products__button">
-							<i class="ri-shopping-bag-line button__icon"></i>
-						</button>
-					</div>
-				</article>
-			</div>
-		</section>
-	</main>
-
-	<footer class="footer section">
-		<div class="footer__container container grid">
-			<div class="footer__content">
-				<h3 class="footer__title">Products</h3>
-
-				<ul class="footer__links">
-					<li>
-						<a href="#" class="footer__link">Keyboards</a>
-					</li>
-					<li>
-						<a href="#" class="footer__link">Cases</a>
-					</li>
-					<li>
-						<a href="#" class="footer__link">Accessories</a>
-					</li>
-				</ul>
-			</div>
-
-			<div class="footer__content">
-				<h3 class="footer__title">Support</h3>
-
-				<ul class="footer__links">
-					<li>
-						<a href="#" class="footer__link">Service</a>
-					</li>
-					<li>
-						<a href="#" class="footer__link">Updates</a>
-					</li>
-					<li>
-						<a href="#" class="footer__link">Sponsors</a>
-					</li>
-				</ul>
-			</div>
-
-			<div class="footer__content">
-				<form action="" class="footer__form">
-					<input type="email" placeholder="Email" class="footer__input" />
-					<button class="button button--flex">
-						<i class="ri-send-plane-line button__icon"></i>Subscribe
-					</button>
-				</form>
-
-				<div class="footer__social">
-					<a href="#" target="_blank" class="footer__social-link">
-						<i class="ri-facebook-line"></i>
-					</a>
-					<a href="#" target="_blank" class="footer__social-link">
-						<i class="ri-instagram-line"></i>
-					</a>
-					<a href="#" target="_blank" class="footer__social-link">
-						<i class="ri-linkedin-line"></i>
-					</a>
-				</div>
-			</div>
-		</div>
-		<p class="footer__copy">
-			<a href="#" target="_blank" class="footer__copy-link">
-				&#169; All rights reserved.
-			</a>
-		</p>
-	</footer>
-
-	<a href="#" class="scrollup" id="scroll-up">
-		<i class="ri-arrow-drop-up-line scrollup__icon"></i>
-	</a>
-
-	<script src="/src/app.js"></script>
-</body>
-
+		<script src="/src/app.js"></script>
+	</body>
 </html>
