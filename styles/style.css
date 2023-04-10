@@ -117,6 +117,9 @@ img {
 .main {
 	overflow: hidden;
 }
+.hide {
+	display: none;
+}
 
 .container {
 	max-width: 968px;
@@ -549,84 +552,59 @@ img {
 	background-color: var(--scroll-thumb-color-alt);
 }
 
-/* !--- */
-/* .card {
-	position: fixed;
-	top: 0;
-	left: 100%;
-	width: 500px;
-	background-color: #453e3b;
-	height: 100vh;
-	transition: 0.5s;
-}
-.active .card {
-	left: calc(100% - 500px);
-}
-.active .container {
-	transform: translateX(-200px);
-}
-.card h1 {
-	color: #e8bc0e;
-	font-weight: 100;
-	margin: 0;
-	padding: 0 20px;
-	height: 80px;
+.card, #nav-menu-cart h1{
 	display: flex;
+	column-gap: 20px;
 	align-items: center;
-}
-.card .checkOut {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-}
-.card .checkOut div {
-	background-color: #e8bc0e;
-	width: 100%;
-	height: 70px;
-	display: flex;
 	justify-content: center;
-	align-items: center;
-	font-weight: bold;
+}
+.card-img {
+	width: 80px;
+}
+.cart-btn, .cart-continue {
+	display: inline-block;
+	background-color: var(--black-color);
+	color: var(--white-color);
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+	transition: 0.3s;
+	font-size: var(--smaller-font-size);
+	font-family: var(--body-font);
+}
+.cart-btn:hover, .cart-continue:hover {
+	background-color: var(--black-color-alt);
+}
+
+.cart-continue {
+	font-size: 18px;
+}
+
+.card hr {
+	border-left: 10px;
+	height: 20px;
+
+}
+.nav__close__cart {
+	position: absolute;
+	font-size: 1.5rem;
+	top: 1rem;
+	right: 1rem;
+	color: var(--white-color);
 	cursor: pointer;
 }
-.card .checkOut div:nth-child(2) {
-	background-color: #1c1f25;
-	color: #fff;
-}
-.listCard li {
-	display: grid;
-	grid-template-columns: 100px repeat(3, 1fr);
-	color: #fff;
-	row-gap: 10px;
-}
-.listCard li div {
+
+.cart__final {
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
+	font-size: var(--h2-font-size);
+	column-gap: 3rem;
+	padding-top: 40px;
 }
-.listCard li img {
-	width: 90%;
-}
-.listCard li button {
-	background-color: #fff5;
-	border: none;
-}
-.listCard .count {
-	margin: 0 10px;
-} */
-/* !--- */
+
 
 /* For small devices */
 @media screen and (max-width: 340px) {
-	#nav-toggle-cart {
-		position: fixed;
-		top: 1.75%;
-		left: 77%;
-		cursor: pointer;
-		transition: 0.4s;
-	}
 	.container {
 		margin-left: var(--mb-1);
 		margin-right: var(--mb-1);
@@ -699,7 +677,6 @@ img {
 		top: 7rem;
 		padding-right: 5rem;
 	}
-
 	.nav__logo {
 		width: 10rem;
 		padding-top: 2rem;
@@ -744,6 +721,7 @@ img {
 	.home__img {
 		top: -7rem;
 		left: 0;
+		width: 220px ;
 	}
 	.specs__img {
 		width: 300px;
