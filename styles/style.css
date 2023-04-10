@@ -10,12 +10,12 @@
 	--body-color: hsl(var(--hue-color), 4%, 6%);
 	--container-color: hsl(var(--hue-color), 4%, 10%);
 	--text-gradient: linear-gradient(
-        hsl(var(--hue-color), 5%, 75%),
-        hsl(var(--hue-color), 3%, 10%)
-    );
+		hsl(var(--hue-color), 5%, 75%),
+		hsl(var(--hue-color), 3%, 10%)
+	);
 	--scroll-thumb-color: hsl(var(--hue-color), 4%, 16%);
 	--scroll-thumb-color-alt: hsl(var(--hue-color), 4%, 20%);
-	--body-font: '', sans-serif;
+	--body-font: 'Inconsolata', sans-serif;
 	--biggest-font-size: 5rem;
 	--bigger-font-size: 3.5rem;
 	--big-font-size: 2.5rem;
@@ -259,7 +259,6 @@ img {
 	position: relative;
 	margin-bottom: var(--mb-2-5);
 	line-height: var(--text-line-height);
-
 }
 
 .home__price {
@@ -550,8 +549,84 @@ img {
 	background-color: var(--scroll-thumb-color-alt);
 }
 
+/* !--- */
+/* .card {
+	position: fixed;
+	top: 0;
+	left: 100%;
+	width: 500px;
+	background-color: #453e3b;
+	height: 100vh;
+	transition: 0.5s;
+}
+.active .card {
+	left: calc(100% - 500px);
+}
+.active .container {
+	transform: translateX(-200px);
+}
+.card h1 {
+	color: #e8bc0e;
+	font-weight: 100;
+	margin: 0;
+	padding: 0 20px;
+	height: 80px;
+	display: flex;
+	align-items: center;
+}
+.card .checkOut {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+.card .checkOut div {
+	background-color: #e8bc0e;
+	width: 100%;
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	cursor: pointer;
+}
+.card .checkOut div:nth-child(2) {
+	background-color: #1c1f25;
+	color: #fff;
+}
+.listCard li {
+	display: grid;
+	grid-template-columns: 100px repeat(3, 1fr);
+	color: #fff;
+	row-gap: 10px;
+}
+.listCard li div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.listCard li img {
+	width: 90%;
+}
+.listCard li button {
+	background-color: #fff5;
+	border: none;
+}
+.listCard .count {
+	margin: 0 10px;
+} */
+/* !--- */
+
 /* For small devices */
 @media screen and (max-width: 340px) {
+	#nav-toggle-cart {
+		position: fixed;
+		top: 1.75%;
+		left: 77%;
+		cursor: pointer;
+		transition: 0.4s;
+	}
 	.container {
 		margin-left: var(--mb-1);
 		margin-right: var(--mb-1);
@@ -576,8 +651,7 @@ img {
 	.specs__img {
 		width: 200px;
 		padding-top: 90px;
-		right: .2rem;
-		
+		right: 0.2rem;
 	}
 	.case__container {
 		grid-template-columns: 0.6fr 1fr;
@@ -590,7 +664,6 @@ img {
 	}
 	#details-btn {
 		padding-top: 5rem;
-
 	}
 	.case__img {
 		width: 150px;
@@ -620,7 +693,7 @@ img {
 	}
 }
 /* For semi-medium devices */
-@media screen and (max-width: 574px) and (min-width: 341px){
+@media screen and (max-width: 574px) and (min-width: 341px) {
 	.specs__img {
 		width: 300px;
 		top: 7rem;
@@ -629,7 +702,7 @@ img {
 
 	.nav__logo {
 		width: 10rem;
-		padding-top: 2rem
+		padding-top: 2rem;
 	}
 	.products__img {
 		top: 1rem;
@@ -658,10 +731,9 @@ img {
 
 /* For medium devices */
 @media screen and (min-width: 576px) {
-
 	.nav__logo {
 		width: 13rem;
-		padding-top: 2rem
+		padding-top: 2rem;
 	}
 	.home__container {
 		grid-template-columns: 0.8fr 1fr;
@@ -748,7 +820,7 @@ img {
 	}
 	.specs__img {
 		width: 400px;
-		top: .1rem;
+		top: 0.1rem;
 		right: 9rem;
 	}
 	.home__data {
@@ -836,7 +908,7 @@ img {
 	.sponsor__img {
 		width: 100px;
 	}
-	
+
 	.discount__img {
 		width: 350px;
 		border-radius: 15px;
