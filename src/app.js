@@ -4,7 +4,7 @@ const navMenu = document.getElementById('nav-menu'),
 	navClose = document.getElementById('nav-close');
 
 if (navToggle) {
-	navToggle.addEventListener('click', (e) => {
+	navToggle.addEventListener('click', e => {
 		if (e.target.id == 'cartBtnMobile') {
 			return;
 		}
@@ -18,7 +18,7 @@ if (navClose) {
 	});
 }
 
-//! Shopping Cart Logic for Desktop
+//! Shopping Cart Logic
 const cartMenu = document.querySelector('#nav-menu-cart');
 const cartClose = document.getElementById('nav-close-cart');
 
@@ -28,19 +28,17 @@ cart.addEventListener('click', showCart);
 const cartMobile = document.getElementById('cartBtnMobile');
 cartMobile.addEventListener('click', showCart);
 
-function showCart(e) {
-	// e.preventDefault();
-	cartMenu.classList.add('show-menu')	
+function showCart() {
+	cartMenu.classList.add('show-menu');
 	cartMenu.style.display = 'block';
 }
 
 if (cartClose) {
 	cartClose.addEventListener('click', () => {
 		cartMenu.classList.remove('show-menu');
+		cartMenu.style.display = 'none';
 	});
 }
-
-
 
 //! Hide nav menu on link selection (mobile)
 const navLink = document.querySelectorAll('.nav__link');
