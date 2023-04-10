@@ -483,6 +483,7 @@ img {
 .footer__social {
 	display: flex;
 	column-gap: 1.25rem;
+	justify-content: center;
 }
 
 .footer__social-link {
@@ -845,5 +846,9 @@ img {
 	}
 	.footer__copy {
 		margin-top: 9rem;
+	}
+	.footer__content {
+		position: relative;
+		left: 10rem;
 	}
 }
