@@ -149,7 +149,7 @@ img {
 
 .nav__logo {
 	display: flex;
-	width: 6rem;
+	width: 7rem;
 }
 
 .nav__toggle {
@@ -684,8 +684,7 @@ img {
 		padding-right: 5rem;
 	}
 	.nav__logo {
-		width: 10rem;
-		padding-top: 2rem;
+		width: 7rem;
 	}
 	.products__img {
 		top: 1rem;
@@ -715,8 +714,7 @@ img {
 /* For medium devices */
 @media screen and (min-width: 576px) {
 	.nav__logo {
-		width: 13rem;
-		padding-top: 2rem;
+		width: 7rem;
 	}
 	.home__container {
 		grid-template-columns: 0.8fr 1fr;
@@ -780,7 +778,7 @@ img {
 		height: calc(var(--header-height) + 1.5rem);
 	}
 	.nav__logo {
-		width: 15rem;
+		width: 10rem;
 	}
 	.nav__list {
 		flex-direction: row;
@@ -797,23 +795,37 @@ img {
 	#nav-menu-cart {
 		display: none;
 		position: absolute;
-		top: 7rem;
+		top: 20rem;
 		width: 100vh;
 		height: 50vh;
 		border-radius: 20px;
-		justify-content: center;
 		padding-top: 70px;
-		background-image: url('/images/mainIMG/blackBlurred.webp');
+	}
+	.background {
+		background: rgba(111, 110, 110, 0.182);
+		backdrop-filter: blur(16px);
+		background-position: bottom;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 100vh;
+		width: 100%;
 	}
 	#nav-menu-cart h1 {
 		position: absolute;
 		top: 2rem;
-		left: 20rem;
+		left: 19rem;
 	}
 	.cart__final {
 		position: absolute;
 		top: 15rem;
-		right: 15rem;
+		right: 14rem;
+	}
+	/*! apply to center any object */
+	.center {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 	}
 	.home__container {
 		position: relative;
