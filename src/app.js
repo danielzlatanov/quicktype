@@ -49,7 +49,6 @@ window.addEventListener('scroll', scrollUp);
 
 //! Set active nav link on scroll
 const sections = document.querySelectorAll('section[id]');
-console.log(sections);
 function scrollActive() {
 	const scrollY = window.pageYOffset;
 
