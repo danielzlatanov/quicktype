@@ -678,7 +678,8 @@ img {
 		display: flex;
 		width: 130px;
 		left: 10rem;
-		top: 7rem;
+		top: 7.3rem;
+
 		border-radius: 5px;
 	}
 
@@ -727,7 +728,7 @@ img {
 		position: absolute;
 		width: 130px;
 		left: 10rem;
-		top: 7rem;
+		top: 7.3rem;
 		border-radius: 10px;
 	}
 }
@@ -820,11 +821,12 @@ img {
 		display: none;
 		position: absolute;
 		top: 20rem;
-		width: 100vh;
+		width: 85vh;
 		height: 50vh;
 		border-radius: 20px;
 		padding-top: 100px;
 	}
+
 	.background {
 		background: rgba(111, 110, 110, 0.182);
 		backdrop-filter: blur(16px);
