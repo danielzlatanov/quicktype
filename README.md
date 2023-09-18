@@ -42,4 +42,8 @@ The mobile menu and cart functionality in QuickType are controlled by the `app.j
 
 ### Desktop and Mobile
 
+https://github.com/danielzlatanov/quicktype/assets/110429874/4a17d268-cada-45d8-a0b7-302697b326ae
+
 ### Mobile Menu and Cart
+
+https://github.com/danielzlatanov/quicktype/assets/110429874/791690ec-4c7d-44c9-b847-aeabc0b30780
